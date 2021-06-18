@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Practice</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .idea {
+        width: 80%;
+        margin: 20px auto;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      }
+      .items p {
+        padding: 0.8rem 0.4rem;
+      }
+      .items > p:nth-child(odd) {
+        background-color: red;
+      }
+      input[type="text"] {
+        border-top: none;
+        outline: none;
+        padding: 0.5rem;
+      }
+      a[href|="#"] {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="idea">
+      <div class="items">
+        <p>Abhishek Aryan</p>
+        <p>Abhishek Aryan</p>
+        <p>Abhishek Aryan</p>
+        <p>Abhishek Aryan</p>
+        <p>Abhishek Aryan</p>
+        <p>Abhishek Aryan</p>
+      </div>
+
+      <input type="text" placeholder="Enter your message" />
+      <input type="email" placeholder="email" />
+      <a href="psudeo.html">Home</a>
+      <a href="#">Contact</a>
+    </section>
+  </body>
+</html>
