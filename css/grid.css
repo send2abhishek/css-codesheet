@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  overflow: auto;
+  grid-gap: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 20px 10px;
+}
+.grid-item {
+  background-color: rosybrown;
+  overflow-y: auto;
+}
+
+.item1 {
+  grid-column: 1/-1;
+}
+.item2 {
+  grid-row: span 4;
+  display: grid;
+  align-items: center;
+}
