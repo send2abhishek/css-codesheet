@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Down</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      header {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0;
+        width: 100vw;
+      }
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .logo {
+        margin-right: auto;
+      }
+      .menu > ul {
+        list-style-type: none;
+        display: flex;
+      }
+      .menu li {
+        margin: 1rem 0.5rem;
+        cursor: pointer;
+      }
+      .dropDown {
+        list-style-type: none;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Brand</div>
+        <div class="menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>
+              Contact
+              <ul class="dropDown">
+                <li>Type 1</li>
+                <li>Type 2</li>
+              </ul>
+            </li>
+            <li>
+              Other
+              <ul class="dropDown">
+                <li>Type 1</li>
+                <li>Type 2</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
